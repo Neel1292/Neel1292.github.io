@@ -9,6 +9,14 @@
             background-color: #EAF6F6;
         }
 
+        hr{
+            border-style: none;
+            border-top-style: dotted;
+            border-color: grey;
+            border-width: 5px;
+            width: 5%;
+        }
+
         .mx{
             margin-left: 150px; 
         }
@@ -42,14 +50,12 @@
             /* color: black; */
             margin: -22px -8px 18px -8px;
             padding: 10px;
-            animation: introanim;
+            animation: intro;
             animation-duration: 4s;
             animation-delay: 1s;
         }
 
-        @keyframes introanim {
-            /* from{color: black;}
-            to{color: #04AA6D;} */
+        @keyframes intro {
             0%   { color:#4285F4;  }
             25%  { color:#34A853;  }
             50%  { color:#FBBC05;  }
