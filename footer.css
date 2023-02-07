@@ -1,0 +1,10 @@
+footer{
+    background-color: #27262d;
+    color: whitesmoke;
+    margin: -22px -8px 10px -8px;
+    padding: 20px;
+}
+
+.footer{
+    display: inline-flex;
+}
