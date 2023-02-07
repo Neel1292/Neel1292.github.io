@@ -48,10 +48,10 @@
         @keyframes intro {
             /* from{color: black;}
             to{color: #04AA6D;} */
-            0% { color:#4285F4; }
-            25% { color:#34A853; }
-            50% { color:#FBBC05; }
-            100% { color:#EA4335; }
+            0%   { color:#4285F4;  }
+            25%  { color:#34A853;  }
+            50%  { color:#FBBC05;  }
+            100% { color:#EA4335; font-size: 20px ; }
         }
 
         .profile{
