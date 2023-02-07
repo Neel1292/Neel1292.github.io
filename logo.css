@@ -1,0 +1,34 @@
+.fa-html5{
+    color: orangered;
+}
+
+.fa-css3-alt{
+    color: rgb(50, 50, 248);
+}
+
+.fa-js{
+    color: rgb(227, 227, 0);
+    background-color: black;
+    height: 14px;
+    
+}
+
+.fa-react{
+    color: rgb(9, 136, 240);
+}
+
+.fa-bootstrap{
+    color: purple;
+}
+
+.fa-node{
+    color: rgb(13, 201, 13);
+}
+
+.fa-java{
+    color: orange;
+}
+
+.fa-database{
+    color: red;
+}
