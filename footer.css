@@ -1,5 +1,5 @@
 footer{
-    background-color: #27262d;
+    /* background-color: #27262d; */
     color: whitesmoke;
     margin: -22px -8px -5px -8px;
     padding: 30px;
@@ -7,13 +7,13 @@ footer{
 
 .footer{
     display: inline;
-    margin-left: 39%;
+    margin-left: 40%;
     padding: 10px;
     word-spacing: 2rem;    
 }
 
-.fa-github{
-    color:white
+.fa-github:hover{
+    color:black
 }
 
 .fa-linkedin:hover{
