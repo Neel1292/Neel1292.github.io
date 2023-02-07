@@ -1,10 +1,34 @@
 footer{
     background-color: #27262d;
     color: whitesmoke;
-    margin: -22px -8px 10px -8px;
-    padding: 20px;
+    margin: -22px -8px -5px -8px;
+    padding: 30px;
 }
 
 .footer{
-    display: inline-flex;
+    display: inline;
+    margin-left: 39%;
+    padding: 10px;
+    word-spacing: 2rem;    
+}
+
+.fa-github{
+    color:white
+}
+
+.fa-linkedin:hover{
+    color:#0A66C2;
+}
+
+.fa-instagram:hover{
+    color: #d6249f;
+    /* color: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf) */
+}
+
+.fa-envelope:hover{
+    color: #4285F4;
+}
+
+.fa-whatsapp:hover{
+    color: #25D366;
 }
