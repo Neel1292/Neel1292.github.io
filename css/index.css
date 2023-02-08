@@ -14,7 +14,7 @@
             border-top-style: dotted;
             border-color: grey;
             border-width: 5px;
-            width: 5%;
+            width: 5%; 
         }
 
         .mx{
@@ -45,7 +45,7 @@
         }
 
         .intro{
-            /* text-align: center; */
+            text-align: center;
             /* background-color: #27262d; */
             background-color: #227C70;
             /* color: whitesmoke; */
@@ -54,7 +54,7 @@
             padding: 10px;
             animation: intro;
             animation-duration: 4s;
-            animation-delay: 1s;
+            animation-delay: 100ms;
         }
 
         @keyframes intro {
@@ -62,8 +62,9 @@
             0%   { color:#4285F4;  }
             25%  { color:#34A853;  }
             50%  { color:#FBBC05;  }
+            75%  { color:#fb6b05;  }
             100% { color:#EA4335;  }
-            
+
         }
 
         .profile{
