@@ -1,6 +1,6 @@
 footer{
     /* background-color: #27262d; */
-    color: whitesmoke;
+    /* color: whitesmoke; */
     margin: -22px -8px -5px -8px;
     padding: 30px;
     display: inline;
@@ -19,11 +19,11 @@ footer{
 
 
 .fa-github:hover{
-    color:black
+    color:black;
 }
 
 .fa-linkedin:hover{
-    color:#0A66C2;
+    color:#1174d8;
 }
 
 .fa-instagram:hover{
@@ -33,8 +33,4 @@ footer{
 
 .fa-envelope:hover{
     color: #4285F4;
-}
-
-.fa-whatsapp:hover{
-    color: #25D366;
 }

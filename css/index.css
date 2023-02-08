@@ -1,7 +1,8 @@
 
         *{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: #68B984;
+            /* color: #68B984; */
+            color: #66BFBF;
         }
         
         body{
@@ -45,19 +46,19 @@
         }
 
         .intro{
-            text-align: center;
+            /* text-align: center; */
             /* background-color: #27262d; */
-            background-color: #227C70;
+            /* background-color: #227C70; */
             /* color: whitesmoke; */
             /* color: black; */
             margin: -22px -8px 18px -8px;
             padding: 10px;
-            animation: intro;
+            /* animation: intro;
             animation-duration: 4s;
-            animation-delay: 100ms;
+            animation-delay: 100ms; */
         }
 
-        @keyframes intro {
+        /* @keyframes intro {
 
             0%   { color:#4285F4;  }
             25%  { color:#34A853;  }
@@ -65,7 +66,7 @@
             75%  { color:#fb6b05;  }
             100% { color:#EA4335;  }
 
-        }
+        } */
 
         .profile{
             align-items: start;
