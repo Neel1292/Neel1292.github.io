@@ -29,6 +29,7 @@
             margin-left: 30px;
             display: inline-flex;
             justify-content: space-evenly;
+            padding: 2px;
         }
 
         h3{
@@ -46,6 +47,7 @@
         .intro{
             /* text-align: center; */
             /* background-color: #27262d; */
+            background-color: #227C70;
             /* color: whitesmoke; */
             /* color: black; */
             margin: -22px -8px 18px -8px;
@@ -56,10 +58,12 @@
         }
 
         @keyframes intro {
+
             0%   { color:#4285F4;  }
             25%  { color:#34A853;  }
             50%  { color:#FBBC05;  }
             100% { color:#EA4335;  }
+            
         }
 
         .profile{
