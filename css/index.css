@@ -95,9 +95,37 @@ a {
     /* color: black; */
     margin: -25px -8px 18px -8px;
     padding: 10px;
+    display: inline-flex;
+    width: 100%;
     /* animation: intro;
         animation-duration: 4s;
         animation-delay: 100ms; */
+}
+
+.sub-intro{
+    margin-top: 4%;
+    margin-left: 6px;
+}
+
+.code_gif{
+    margin-top: 11%;
+    margin-left: 32%; 
+    width: 20%;
+    height: 150px;
+    position: relative;
+}
+
+#code{
+    position: absolute;
+    left: 0;
+    animation-name: enter;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+
+}
+@keyframes enter{
+    from { left: 90%; }
+    to   { left: 0%; }
 }
 
 /* @keyframes intro {
