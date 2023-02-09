@@ -10,6 +10,38 @@
             background-color: #EAF6F6;
         }
 
+        nav{
+            list-style: none;
+            margin: 0.6rem;
+            margin-left: 80%;
+            padding: 20px;
+            border: 1px solid transparent;
+            /* width: 300px; */
+            height: 20px;
+
+        }
+        
+        .nav-list{
+            display: inline;
+            margin: 0.5rem;
+            padding: 7px;
+        }
+        
+        #home:hover{
+            font-size:large;
+            color: black;
+        }
+        
+        #edu:hover{
+            font-size:large;
+            color: black;
+        }
+        
+        #skill:hover{
+            font-size:large;
+            color: black;
+        }
+
         hr{
             border-style: none;
             border-top-style: dotted;
@@ -51,7 +83,7 @@
             /* background-color: #227C70; */
             /* color: whitesmoke; */
             /* color: black; */
-            margin: -22px -8px 18px -8px;
+            margin: -25px -8px 18px -8px;
             padding: 10px;
             /* animation: intro;
             animation-duration: 4s;
