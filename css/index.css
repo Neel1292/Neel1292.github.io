@@ -12,7 +12,7 @@ body {
 nav {
     list-style: none;
     margin: 0.6rem;
-    margin-left: 80%;
+    margin-left: 75%;
     padding: 20px;
     border: 1px solid transparent;
     /* width: 300px; */
@@ -22,7 +22,7 @@ nav {
 
 .nav-list {
     display: inline;
-    margin: 0.5rem;
+    margin: 0.2rem;
     padding: 7px;
 }
 
@@ -30,7 +30,6 @@ nav {
     font-size: large;
     color: black;
     cursor: pointer;
-    ;
 }
 
 #edu:hover {
@@ -45,6 +44,12 @@ nav {
     color: black;
     cursor: pointer;
     ;
+}
+
+#contact:hover {
+    font-size: large;
+    color: black;
+    cursor: pointer;
 }
 
 hr {
@@ -134,7 +139,7 @@ p {
 }
 
 .checked {
-    color: orange;
+    /* color: orange; */
     padding: 2px;
 }
 

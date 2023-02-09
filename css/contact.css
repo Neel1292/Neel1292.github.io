@@ -1,12 +1,17 @@
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:#EAF6F6;
 }
 
-input::-webkit-outer-spin-button,
+body{
+    color: #66BFBF;
+}
+
+/* input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
+} */
 
 input {
     margin-left: 10px;
@@ -14,11 +19,12 @@ input {
     height: 30px;
     border: 2px solid rgb(19, 19, 19);
     border-radius: 10px;
-    padding: 5px;
+    padding: 7px;
 }
 
 label {
-    color: #080808;
+    color: inherit;
+    border-color:#227C70 ;
     margin: 5px;
     margin: 5px;
     padding: 15px;
@@ -39,11 +45,14 @@ h1 {
     width: 10%;
     height: 1%;
     border-style: none;
-    background-color: blue;
+    border-radius: 0px;
+    /* background-color: blue; */
+    background-color: #227C70;
     color: whitesmoke;
     padding: 9px;
+    text-transform: capitalize;
 }
 
 .btn:hover {
-    background-color: rgb(28, 118, 244);
+    background-color: #84D2C5;
 }
