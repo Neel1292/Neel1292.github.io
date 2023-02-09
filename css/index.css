@@ -3,16 +3,19 @@
     /* color: #68B984; */
     color: #66BFBF;
 }
+ 
 
 /* Custom Font */
 
 @font-face{
     font-family:ChineseHiromi;
-    src:url('/fonts/HIROMISAKE.ttf');
+    src:url('/fonts/HIROMISAKE.ttf') format('truetype');
+
     font-family:ChineseScript;
-    src:url('/fonts/Khiara\ Script.otf');
+    src:url('/fonts/Khiara\ Script.otf') format('woff2');
+
     font-family:ChineseItache;
-    src:url('/fonts/Zenzai\ Itache.ttf');
+    src:url('/fonts/Zenzai\ Itache.ttf') format('truetype');
 }
 
 body {
@@ -28,16 +31,18 @@ nav {
     margin-left: 75%;
     padding: 20px;
     border: 1px solid transparent;
-    /* width: 300px; */
     height: 20px;
 }
 
 .nav-list {
     display: inline;
     margin: 0.2rem;
+    font-size: medium;
     padding: 7px;
+    transition: font-size;
+    transition-duration: 1s;
 }
-
+                
 #home:hover {
     font-size: large;
     color: black;
@@ -48,14 +53,12 @@ nav {
     font-size: large;
     color: black;
     cursor: pointer;
-    ;
 }
 
 #skill:hover {
     font-size: large;
     color: black;
     cursor: pointer;
-    ;
 }
 
 #contact:hover {
@@ -67,22 +70,17 @@ nav {
 /* First Self */
 
 .intro {
-    /* text-align: center; */
-    /* background-color: #27262d; */
-    /* background-color: #227C70; */
-    /* color: whitesmoke; */
-    /* color: black; */
     margin: -25px -8px 18px -8px;
     padding: 10px;
     display: inline-flex;
     width: 100%;
-    /* animation: intro;
+    color: #66BFBF;
+    animation: textcolor;
     animation-duration: 4s;
-    animation-delay: 100ms; */
+    animation-delay: 100ms;
 }
 
-
-/* @keyframes intro {
+@keyframes textcolor {
 
     0%   { color:#4285F4;  }
     25%  { color:#34A853;  }
@@ -90,11 +88,34 @@ nav {
     75%  { color:#fb6b05;  }
     100% { color:#EA4335;  }
 
-} */
+}
+
+.profile {
+    align-items: start;
+    height: 262px;
+    width: 260px;
+    padding: 10px;
+    margin: 3px;
+    margin-bottom: -4px;
+    position: relative;
+    animation-name: profilepic;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+.profile_pic{
+    margin-left: 7px;
+}
+
+@keyframes profilepic{
+    0%   { left:0px; top:-100px; }
+    75%  { left:0px; top:200px; }
+    100% { left:0px; top:0px; }
+}
 
 .sub-intro {
-    margin-top: 4%;
-    margin-left: 6px;
+    margin-top: 3%;
+    margin-left: 3px;
 }
 
 .code_gif {
@@ -111,21 +132,11 @@ nav {
     animation-name: enter;
     animation-duration: 6s;
     animation-timing-function: linear;
-
 }
 
 @keyframes enter {
     from { left: 100%; }
     to { left: 0%; }
-}
-
-.profile {
-    align-items: start;
-    height: 262px;
-    width: 260px;
-    padding: 10px;
-    margin: 3px;
-    margin-bottom: -4px;
 }
 
 /* Line */
@@ -187,7 +198,6 @@ p {
 }
 
 .checked {
-    /* color: orange; */
     padding: 2px;
 }
 
