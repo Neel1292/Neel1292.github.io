@@ -1,96 +1,101 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* color: #68B984; */
+    color: #66BFBF;
+}
 
-        *{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            /* color: #68B984; */
-            color: #66BFBF;
-        }
-        
-        body{
-            /* color: #CEEDC7; */
-            background-color: #EAF6F6;
-        }
+body {
+    /* color: #CEEDC7; */
+    background-color: #EAF6F6;
+}
 
-        nav{
-            list-style: none;
-            margin: 0.6rem;
-            margin-left: 80%;
-            padding: 20px;
-            border: 1px solid transparent;
-            /* width: 300px; */
-            height: 20px;
+nav {
+    list-style: none;
+    margin: 0.6rem;
+    margin-left: 80%;
+    padding: 20px;
+    border: 1px solid transparent;
+    /* width: 300px; */
+    height: 20px;
 
-        }
-        
-        .nav-list{
-            display: inline;
-            margin: 0.5rem;
-            padding: 7px;
-        }
-        
-        #home:hover{
-            font-size:large;
-            color: black;
-        }
-        
-        #edu:hover{
-            font-size:large;
-            color: black;
-        }
-        
-        #skill:hover{
-            font-size:large;
-            color: black;
-        }
+}
 
-        hr{
-            border-style: none;
-            border-top-style: dotted;
-            border-color: grey;
-            border-width: 5px;
-            width: 5%; 
-        }
+.nav-list {
+    display: inline;
+    margin: 0.5rem;
+    padding: 7px;
+}
 
-        .mx{
-            margin-left: 150px; 
-        }
+#home:hover {
+    font-size: large;
+    color: black;
+    cursor: pointer;
+    ;
+}
 
-        .mx-10{
-            margin-left: 5px; 
-        }
-        
-        .details{
-            margin-left: 30px;
-            display: inline-flex;
-            justify-content: space-evenly;
-            padding: 2px;
-        }
+#edu:hover {
+    font-size: large;
+    color: black;
+    cursor: pointer;
+    ;
+}
 
-        h3{
-            margin-top: -14px;
-        }
-        
-        h5{
-            margin-top: -12px;
-        }
+#skill:hover {
+    font-size: large;
+    color: black;
+    cursor: pointer;
+    ;
+}
 
-        a{
-            color: inherit;
-        }
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: grey;
+    border-width: 5px;
+    width: 5%;
+}
 
-        .intro{
-            /* text-align: center; */
-            /* background-color: #27262d; */
-            /* background-color: #227C70; */
-            /* color: whitesmoke; */
-            /* color: black; */
-            margin: -25px -8px 18px -8px;
-            padding: 10px;
-            /* animation: intro;
-            animation-duration: 4s;
-            animation-delay: 100ms; */
-        }
+.mx {
+    margin-left: 150px;
+}
 
-        /* @keyframes intro {
+.mx-10 {
+    margin-left: 5px;
+}
+
+.details {
+    margin-left: 30px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 2px;
+}
+
+h3 {
+    margin-top: -14px;
+}
+
+h5 {
+    margin-top: -12px;
+}
+
+a {
+    color: inherit;
+}
+
+.intro {
+    /* text-align: center; */
+    /* background-color: #27262d; */
+    /* background-color: #227C70; */
+    /* color: whitesmoke; */
+    /* color: black; */
+    margin: -25px -8px 18px -8px;
+    padding: 10px;
+    /* animation: intro;
+        animation-duration: 4s;
+        animation-delay: 100ms; */
+}
+
+/* @keyframes intro {
 
             0%   { color:#4285F4;  }
             25%  { color:#34A853;  }
@@ -100,44 +105,44 @@
 
         } */
 
-        .profile{
-            align-items: start;
-            height:262px;
-            width:260px;
-            padding: 10px;
-            margin: 3px;
-            margin-bottom: -4px;
-        }
+.profile {
+    align-items: start;
+    height: 262px;
+    width: 260px;
+    padding: 10px;
+    margin: 3px;
+    margin-bottom: -4px;
+}
 
-        #add{
-            font-size: small;
-        }
+#add {
+    font-size: small;
+}
 
-        p{
-            margin: 5px;
-        }
+p {
+    margin: 5px;
+}
 
-        .mx-list{
-            margin-left: 20px; 
-            align-items:end;
-            display: inline;
-            font-weight: 200;
-        }
+.mx-list {
+    margin-left: 20px;
+    align-items: end;
+    display: inline;
+    font-weight: 200;
+}
 
-        .hobbie{
-            padding: 5px;
-        }
+.hobbie {
+    padding: 5px;
+}
 
-        .checked{
-            color: orange;
-            padding: 2px;
-        }
+.checked {
+    color: orange;
+    padding: 2px;
+}
 
-        #mongo{
-            height: 16px;
-            width: 17px;
-        }
+#mongo {
+    height: 16px;
+    width: 17px;
+}
 
-        .col-2{
-            margin-top: -44px;
-        }
+.col-2 {
+    margin-top: -44px;
+}
