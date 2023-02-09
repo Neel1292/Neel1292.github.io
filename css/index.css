@@ -1,13 +1,22 @@
-* {
+*{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* color: #68B984; */
     color: #66BFBF;
+}
+
+/* Custom Font */
+
+@font-face{
+    font-family:ChineseHiromi;
+    src:url('fonts/HIROMISAKE.ttf');;
 }
 
 body {
     /* color: #CEEDC7; */
     background-color: #EAF6F6;
 }
+
+/* Nav Bar */
 
 nav {
     list-style: none;
@@ -52,40 +61,7 @@ nav {
     cursor: pointer;
 }
 
-hr {
-    border-style: none;
-    border-top-style: dotted;
-    border-color: grey;
-    border-width: 5px;
-    width: 5%;
-}
-
-.mx {
-    margin-left: 150px;
-}
-
-.mx-10 {
-    margin-left: 5px;
-}
-
-.details {
-    margin-left: 30px;
-    display: inline-flex;
-    justify-content: space-evenly;
-    padding: 2px;
-}
-
-h3 {
-    margin-top: -14px;
-}
-
-h5 {
-    margin-top: -12px;
-}
-
-a {
-    color: inherit;
-}
+/* First Self */
 
 .intro {
     /* text-align: center; */
@@ -102,20 +78,20 @@ a {
         animation-delay: 100ms; */
 }
 
-.sub-intro{
+.sub-intro {
     margin-top: 4%;
     margin-left: 6px;
 }
 
-.code_gif{
+.code_gif {
     margin-top: 11%;
-    margin-left: 32%; 
+    margin-left: 32%;
     width: 20%;
     height: 150px;
     position: relative;
 }
 
-#code{
+#code {
     position: absolute;
     left: 0;
     animation-name: enter;
@@ -123,9 +99,15 @@ a {
     animation-timing-function: linear;
 
 }
-@keyframes enter{
-    from { left: 90%; }
-    to   { left: 0%; }
+
+@keyframes enter {
+    from {
+        left: 90%;
+    }
+
+    to {
+        left: 0%;
+    }
 }
 
 /* @keyframes intro {
@@ -147,8 +129,43 @@ a {
     margin-bottom: -4px;
 }
 
-#add {
-    font-size: small;
+/* Line */
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: grey;
+    border-width: 5px;
+    width: 5%;
+}
+
+.mx {
+    margin-left: 150px;
+}
+
+.mx-10 {
+    margin-left: 5px;
+}
+
+/* Personal Details */
+
+.details {
+    margin-left: 30px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 2px;
+}
+
+h3 {
+    margin-top: -14px;
+}
+
+h5 {
+    margin-top: -12px;
+}
+
+a {
+    color: inherit;
 }
 
 p {
