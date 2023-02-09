@@ -8,7 +8,11 @@
 
 @font-face{
     font-family:ChineseHiromi;
-    src:url('fonts/HIROMISAKE.ttf');
+    src:url('/fonts/HIROMISAKE.ttf');
+    font-family:ChineseScript;
+    src:url('/fonts/Khiara\ Script.otf');
+    font-family:ChineseItache;
+    src:url('/fonts/Zenzai\ Itache.ttf');
 }
 
 body {
@@ -26,7 +30,6 @@ nav {
     border: 1px solid transparent;
     /* width: 300px; */
     height: 20px;
-
 }
 
 .nav-list {
@@ -74,9 +77,20 @@ nav {
     display: inline-flex;
     width: 100%;
     /* animation: intro;
-        animation-duration: 4s;
-        animation-delay: 100ms; */
+    animation-duration: 4s;
+    animation-delay: 100ms; */
 }
+
+
+/* @keyframes intro {
+
+    0%   { color:#4285F4;  }
+    25%  { color:#34A853;  }
+    50%  { color:#FBBC05;  }
+    75%  { color:#fb6b05;  }
+    100% { color:#EA4335;  }
+
+} */
 
 .sub-intro {
     margin-top: 4%;
@@ -101,24 +115,9 @@ nav {
 }
 
 @keyframes enter {
-    from {
-        left: 90%;
-    }
-
-    to {
-        left: 0%;
-    }
+    from { left: 100%; }
+    to { left: 0%; }
 }
-
-/* @keyframes intro {
-
-            0%   { color:#4285F4;  }
-            25%  { color:#34A853;  }
-            50%  { color:#FBBC05;  }
-            75%  { color:#fb6b05;  }
-            100% { color:#EA4335;  }
-
-        } */
 
 .profile {
     align-items: start;
@@ -166,6 +165,10 @@ h5 {
 
 a {
     color: inherit;
+}
+
+.career{
+    margin: 5px;
 }
 
 p {
