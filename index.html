@@ -8,6 +8,26 @@
     <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
     <title>Neel's Personal Site</title>
 
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="Neel Prajapati Portfolio" />
+    <meta property="og:image" content="/images/user.png" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Neel Prajapati Tech" />
+    <meta property="og:description" content="Myself Neel Prajapati and I am a Full-Stack Web Developer" />
+    <meta name="twitter:title" content="Neel Prajapti" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- Skills style  -->
+    <link rel="stylesheet" href="css/skills.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/logo.css">
     <link rel="stylesheet" href="/css/footer.css">
@@ -22,93 +42,190 @@
 
 <body>
 
-    <nav>
-        <li class="nav-list" id="home">Home</li>
-        <li class="nav-list" id="edu">Eduction</li>
-        <li class="nav-list" id="skill">Skills</li>
-        <li class="nav-list" id="contact"><a href="contact.html" style="text-decoration: none;">Contact Me</a></li>
-    </nav>
+    <div id="main">
+        <nav>
+            <div class="page-width">
+                <div class="nav-list">
+                    <h4 id="home"><a href="#">Home</a></h4>
+                    <h4 id="edu"><a href="#">Eduction</a></h4>
+                    <h4 id="skill"><a href="#">Skills</a></h4>
+                    <h4 id="contact"><a href="./contact.html">Contact</a></h4>
+                </div>
+            </div>
+        </nav>
 
-    <div class="intro">
+        <div class="introduction">
+            <div class="page-width">  
+                <div class="intro">
+                    <div class="profile_pic">
+                        <img class="profile" src="/images/profile.png" alt="Neel Profile">
+                    </div>
 
-        <div class="profile_pic">
-            <img class="profile" src="/images/profile.png" alt="Neel Profile">
+                    <div class="sub-intro">
+                        <h1>Neel Dashrathbhai Prajapati</h1>
+                        <h4>Full-Stack Developer (MERN)</h4>
+                        <!-- <h4></h4> -->
+                    </div>
+
+                    <div class="code_gif">
+                        <img id="code" src="images/code.gif" alt="Code Gif">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="sub-intro">
-            <h1>Neel Dashrathbhai Prajapati</h1>
-            <h4>INFORMATION TECHNOLOGY (2021-2024)</h4>
-            <h4>WEB DEVELOPER</h4>
+        <hr>
+        <br>
+
+        <div class="details">
+
+            <!-- <h5 class="mx">DOB: 12/09/2002</h5> -->
+            <h5 class="mx"><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;Gujarat, India</h5>
+            <h5 class="mx"><i class="fa-solid fa-mobile-button"></i>&nbsp;&nbsp;(+91)-7046442576</h5>
+            <h5 class="mx"><i class="fa-solid fa-envelope"></i>&nbsp;prajapatineel64@gmail.com</h5>
+            <h5 class="mx"><i class="fa-solid fa-link"></i>&nbsp;<a
+                    href="https://www.linkedin.com/in/neel-prajapati-590375259/" target="_blank">Linkedin</a></h5>
+
         </div>
 
-        <div class="code_gif">
-            <img id="code" src="images/code.gif" alt="Code Gif">
+        <div class="career-objective">
+            <div class="page-width">
+                <div class="career">
+                    <h2>Career Objective:</h2>
+                    <p>I am<em> Developer & Student </em> pursuing Bachelor's at L.D College of Engineering in the field of
+                        <em>Information Technology</em>. An enthusiastic fresher with highly motivated leadership skills. Eager
+                        to
+                        learn
+                        new technologies and methodologies. To work for an organization which provides me to improve my skills
+                        and
+                        knowledge to growth along with the organization objective.
+                    </p><br>
+                </div>
+            </div>
         </div>
 
-    </div>
-    
-    <hr>
+        <hr>
 
-    <br>
-    <!-- <div class="details">
+        <div class="experience">
+            <div class="page-width">
+                <h2>Work Experience </h2>
+                <div class="work-experience">
+                    <div class="work-experience-data">
+                        <h3>Prioxis Technologies Pvt. Ltd.</h3>
+                        <h4>Junior Software Engineer </h4>
+                        <h5>July 2024 - Present</h5>
+                    </div>
+                
+                    <div class="work-experience-data">
+                        <h3>Prioxis Technologies Pvt. Ltd.</h3>
+                        <h4>Software Developer Intern </h4>
+                        <h5>January 2024 - July 2024</h5>
+                    </div>
+                
 
-        <h5 class="mx">DOB: 12/09/2002</h5>
-        <h5 class="mx"><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;Gujarat, India</h5>
-        <h5 class="mx"><i class="fa-solid fa-mobile-button"></i>&nbsp;&nbsp;(+91)-7046442576</h5>
-        <h5 class="mx"><i class="fa-solid fa-envelope"></i>&nbsp;prajapatineel64@gmail.com</h5>
+                    <div class="work-experience-data">
+                        <h3>QSpiders - Software Testing Training Institute</h3>
+                        <h4>Web Development Intern</h4>
+                        <h5>11-June-2023 - 27-June-2023</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><hr>
 
-    </div> -->
+        <div class="education">
+            <div class="page-width">
+                <h2>Education Qualification </h2>
+                <div class="qualification">
+                    <div class="qualification-data">
+                        <h3>L.D College Of Engineering</h3>
+                        <span>Bachelor of Engineering </span>
+                        <h4>Information Technology</h4>
+                        <span>2021 - 2024  (GTU Affiliated)</span>
+                        <h5>CGPA - 8.23 </h5>
+                    </div>
+                
+                    <div class="qualification-data">
+                        <h3>Dalia Institute Of Diploma Studies</h3>
+                        <span>Diploma Engineering</span>
+                        <h4>Information Technology</h4>
+                        <span>2018 - 2021 (GTU Affiliated)</span>
+                        <h5>9.85 CGPA</h5>
+                    </div>
+                
+                    <div class="qualification-data">
+                        <h3>Vedant International School</h3>
+                        <h3>SSC</h3>
+                        <span>2017-2018 (CBSE)</span>
+                        <h5>64.8%</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div class="career">
-        <strong>Career Objective:</strong><br>
-        <p>I am<em> Developer & Student </em> pursuing Bachelor's at L.D College of Engineering in the field of
-            <em>Information Technology</em>. An enthusiastic fresher with highly motivated leadership skills. Eager to
-            learn
-            new technologies and methodologies. To work for an organization which provides me to improve my skills and
-            knowledge to growth along with the organization objective.
-        </p><br>
-    </div>
+        <!-- <hr size="3" noshade> -->
+        <br><hr>
 
-    <!-- <hr size="3" noshade> -->
-    <hr>
+        <div class="skills">
+            <div class="page-width">
+                <h2>Skills </h2>
+                <div class="technical">
+                    <h3 class="mx-list"><strong>Technical Skills:</strong></h3><br><br>
+            
+                    <div class="skills-container-inner col-md-3 col-sm-6 col-xs-12">
+                        <div class="skill-item"><img src="/images/skills/java.svg" alt="Java">Java</div>
+                        <div class="skill-item"><img src="/images/skills/html.svg" alt="HTML">HTML</div>
+                        <div class="skill-item"><img src="/images/skills/css.svg" alt="CSS">CSS</div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                                alt="CSS">Tailwind</div>
+                        <div class="skill-item"><img src="/images/skills/javascript.svg" alt="JavaScript">JavaScript
+                        </div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                alt="TypeScript">TypeScript</div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                alt="JavaScript">ReactJS</div>
+                        <!-- <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                                alt="Next">NextJS</div> -->
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                alt="Node">NodeJS</div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                alt="Express">Express</div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                alt="MongoDB">MongoDB
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                alt="MongoDB">MySQL
+                        </div>
+                        <div class="skill-item"><img src="/images/skills/postgresql.svg" alt="PostgreSQL">PostgreSQL</div>
+                        <div class="skill-item"><img src="/images/skills/github.svg" alt="Github">Github</div>
+                    </div>
+                </div>
 
-    <h1>Education Qualification:</h1>
+                <div class="career-oriented">
+                    <h3 class="mx-list">Career - Oriented Skills</h3>
+                    <div class="career-skills">
+                        <span class="mx-list">Problem Solving</span>
+                        <span class="mx-list">Critical Thinking</span>
+                        <span class="mx-list">Communication</span>
+                        <span class="mx-list">Creative Thinking</span>
+                        <span class="mx-list">Time Management</span>
+                        <!-- <li class="mx-list">Leadership</li> -->
+                        <span class="mx-list">Team Work</span>
+                        <span class="mx-list">Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <dt>
-    <dd>
-        <h2>L.D College Of Engineering</h2>
-        <h3>Bachelor of Engineering in Information Technology</h3>
-        <h5>2023 - Present</h5>
-        <h5>CGPA - 8.17 (Upto 4th Sem) </h5>
-    </dd>
-    </dt>
-
-    <dt>
-    <dd>
-        <h2>Dalia Institute Of Diploma Studies</h2>
-        <h3>Diploma Engineering in Information Technology</h3>
-        <h5>2018 - 2021 (GTU Affiliated)</h5>
-        <h5>9.85 CGPA</h5>
-    </dd>
-    </dt>
-
-    <dt>
-    <dd>
-        <h2>Vedant International School</h2>
-        <h3>SSC</h3>
-        <h5>2006-2018 (Central Board of Secondary Education)</h5>
-        <h5>64.8%</h5>
-    </dd>
-    </dt>
-
-    <!-- <hr size="3" noshade> -->
-    <hr>
-
-    <h1>Skills:</h1>
-
-    <h3 class="mx-list"><strong>Technical Skills:</strong></h3><br>
-
-    <table>
+        <!-- <table>
         <tr>
             <td>
                 <table cellspacing="20">
@@ -121,12 +238,12 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                            </td>
+                            </td> 
                         </tr>
 
                         <tr>
                             <td class="mx-list"><i class="fa-brands fa-css3-alt"></i> CSS3 </td>
-                            <td>
+                             <td>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -135,11 +252,11 @@
 
                         <tr>
                             <td class="mx-list"><i class="fa-brands fa-js"></i> JavaScript </td>
-                            <td>
+                             <td>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                            </td>
+                            </td> 
                         </tr>
 
                         <tr>
@@ -186,7 +303,7 @@
                         </tr>
 
                         <tr>
-                            <td class="mx-list"><i class="fa-brands fa-java"></i> Java
+                            <td class="mx-list"><i class="fa-brands fa-java" wid></i> Java
                             <td>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -206,42 +323,74 @@
 
             </td>
         </tr>
-    </table>
+    </table> -->
 
-    <ul>
-        <li class="mx-list"><strong>Career - Oriented Skills:</strong></li>
-        <li class="mx-list">Problem Solving Skills</li>
-        <li class="mx-list">Critical Thinking</li>
-        <li class="mx-list">Communication Skills</li>
-        <li class="mx-list">Creative Thinking</li>
-        <li class="mx-list">Leadership</li>
-        <li class="mx-list">Team Work</li>
-    </ul>
+        <br>
+        <!-- <hr size="3" noshade> -->
+        <hr>
 
-    <br>
-    <!-- <hr size="3" noshade> -->
-    <hr>
+        <div class="hobbies">
+            <div class="page-width">
+                <div class="hobbie-container">
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li class="hobbie">Listening Podcast & Music</li>
+                        <li class="hobbie">Exploring & Learning New Technologies</li>
+                        <li class="hobbie">Watching Movies & Webseries</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <h1>Hobbies:</h1>
-    <ul>
-        <li class="hobbie">Listening Podcast & Music</li>
-        <li class="hobbie">Exploring & Learning New Technologies</li>
-        <li class="hobbie">Watching Movies & Webseries</li>
-    </ul>
-    <br>
+        <br>
+        <hr>
+    </div>
+
+    <footer>
+        <div class="page-width">
+            <div class="footer"> 
+                <div class="footer-left">
+                    <form class="form" action="mailto: prajapatineel122002@gmail.com" method="post" enctype="text/plain">
+
+                        <h2 style="text-align: center;">Contact Me</h2>
+                    
+                        <div class="input-control">
+                            <label for="cname">Enter Name: </label>
+                            <input type="text" name="Name: " placeholder="Enter Full Name" required><br><br>
+                        </div>
+                        <div class="input-control">
+                            <label for="cemail">Enter Email: </label>
+                            <input type="email" name="Email: " placeholder="Enter Email" required><br><br>
+                        </div>
+                        <div class="input-control">
+                            <label for="cno">Mobile Number: </label>
+                            <input type="tel" name="Mobile Number: " placeholder="Enter Contact No." maxlength="10" required><br><br>
+                        </div>
+                        <div class="input-control">
+                            <label for="reason">How May I Help You: </label><br>
+                            <textarea type="text" name="brief-description" placeholder="Provide Brief Descripton" cols="100" rows="5"></textarea>
+                        </div>
+
+                        <button type=submit class="btn">Submit</button>
+                    
+                    </form>
+                </div>           
+                <div class="footer-right">
+                    <div class="social-icons">
+                        <a href="https://github.com/Neel1292" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/neel-prajapati-590375259/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/neelprajapati_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto: prajapatineel122002@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <p class="footer-text">
+                        <script>document.write(new Date().getFullYear())</script> &copy; Neel Prajapati Crafted by ❤️
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
 </body>
-
-
-<footer>
-    <div class="footer">
-        <a href="https://github.com/Neel1292" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/neel-prajapati-590375259/" target="_blank"><i
-                class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/neelprajapati_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="mailto: prajapatineel122002@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-    </div>
-    <p class="neelfooter">&copy; 2023 Neel Prajapati.All Rights Reserved</p>
-</footer>
-
 </html>

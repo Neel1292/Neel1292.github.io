@@ -1,80 +1,141 @@
-*{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* color: #68B984; */
-    color: #66BFBF;
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* color: #68B984; */
+  color: #66bfbf;
+  box-sizing: border-box;
 }
- 
 
 /* Custom Font */
 
-@font-face{
-    font-family:ChineseHiromi;
-    src:url('/fonts/HIROMISAKE.ttf') format('truetype');
+@font-face {
+  font-family: ChineseHiromi;
+  src: url("/fonts/HIROMISAKE.ttf") format("truetype");
 
-    font-family:ChineseScript;
-    src:url('/fonts/Khiara\ Script.otf') format('woff2');
+  font-family: ChineseScript;
+  src: url("/fonts/Khiara\ Script.otf") format("woff2");
 
-    font-family:ChineseItache;
-    src:url('/fonts/Zenzai\ Itache.ttf') format('truetype');
+  font-family: ChineseItache;
+  src: url("/fonts/Zenzai\ Itache.ttf") format("truetype");
 }
 
 body {
-    /* color: #CEEDC7; */
-    background-color: #EAF6F6;
+  /* color: #CEEDC7; */
+  padding: 0;
+  margin: 0;
+  background-color: #eaf6f6;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.page-width {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, p{
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 /* Nav Bar */
 
-nav {
-    list-style: none;
-    margin: 0.6rem;
-    margin-left: 75%;
-    padding: 20px;
-    border: 1px solid transparent;
-    height: 20px;
+#main {
+  position: relative;
+  z-index: 10;
+}
+
+nav .nav-list {
+  padding: 1vw 1vw 1vw 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  justify-content: flex-end;
 }
 
 .nav-list {
-    display: inline;
-    margin: 0.2rem;
-    font-size: medium;
-    padding: 7px;
-    transition: font-size;
-    transition-duration: 1s;
-}
-                
-#home:hover {
-    font-size: large;
-    color: black;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
 }
 
-#edu:hover {
-    font-size: large;
-    color: black;
-    cursor: pointer;
+.nav-list h4 {
+  padding: 10px;
+  border: 1px solid #048484;
+  border-radius: 50px;
+  transition: all ease 0.4s;
+  position: relative;
+  overflow: hidden;
+  margin: 0.2rem;
+  font-size: 15px;
 }
 
-#skill:hover {
-    font-size: large;
-    color: black;
-    cursor: pointer;
+.nav-list h4::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #048484;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.4s;
 }
 
-#contact:hover {
-    font-size: large;
-    color: black;
-    cursor: pointer;
+.nav-list h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+.nav-list h4 a {
+  text-decoration: none;
+  color: #048484;
+  position: relative;
+  z-index: 9;
+}
+
+.nav-list h4:hover a {
+  color: #fff;
 }
 
 /* First Self */
 
 .intro {
-    margin: -25px -8px 18px -8px;
-    padding: 10px;
-    display: inline-flex;
-    width: 100%;
-   /* animation: textcolor;
+  margin: -25px -8px 18px -8px;
+  padding: 10px;
+  display: inline-flex;
+  width: 100%;
+  /* animation: textcolor;
     animation-duration: 4s;
     animation-delay: 100ms; */
 }
@@ -90,120 +151,216 @@ nav {
 } */
 
 .profile {
-    align-items: start;
-    height: 262px;
-    width: 260px;
-    padding: 10px;
-    margin: 3px;
-    margin-bottom: -4px;
-    position: relative;
-    animation-name: profilepic;
-    animation-duration: 4s;
-    animation-timing-function: linear;
+  /* height: 262px;
+  width: 260px; */
+  max-width: 400px;
+  width: 100%;
+  padding-right: 10px;
+  /* margin: 3px; */
+  margin-bottom: -4px;
+  position: relative;
+  animation-name: profilepic;
+  animation-duration: 4s;
+  animation-timing-function: linear;
 }
 
-@keyframes profilepic{
-    0%   { left:0px; top:-200%; }
-    75%  { left:0px; top:100px; }
-    100% { left:0px; top:0px; }
+@keyframes profilepic {
+  0% {
+    left: 0px;
+    top: -100%;
+  }
+  75% {
+    left: 0px;
+    top: 12%;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
 }
 
-.profile_pic{
-    margin-left: 7px;
+.profile_pic {
+  margin-left: 7px;
 }
 .sub-intro {
-    margin-top: 3%;
-    margin-left: 3px;
+  margin-top: 3%;
+  margin-left: 3px;
 }
 
 .code_gif {
-    margin-top: 11%;
-    margin-left: 32%;
-    width: 20%;
-    height: 150px;
-    position: relative;
+  margin-top: 11%;
+  margin-left: 32%;
+  width: 20%;
+  height: 150px;
+  position: relative;
 }
 
 #code {
-    position: absolute;
-    left: 0;
-    animation-name: enter;
-    animation-duration: 6s;
-    animation-timing-function: linear;
+  position: absolute;
+  left: 0;
+  animation-name: enter;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
 
 @keyframes enter {
-    from { left: 100%; }
-    to { left: 0%; }
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
 }
 
 /* Line */
 
 hr {
-    border-style: none;
-    border-top-style: dotted;
-    border-color: grey;
-    border-width: 5px;
-    width: 5%;
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #048484;
+  border-width: 5px;
+  width: 80%;
 }
 
 .mx {
-    margin-left: 150px;
+  margin-left: 150px;
 }
 
 .mx-10 {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 /* Personal Details */
 
 .details {
-    margin-left: 30px;
-    display: inline-flex;
-    justify-content: space-evenly;
-    padding: 2px;
+  margin-left: 30px;
+  display: inline-flex;
+  justify-content: space-evenly;
+  padding: 2px;
 }
 
-h3 {
-    margin-top: -14px;
+.career-objective {
+  margin-top: 30px;
 }
 
-h5 {
-    margin-top: -12px;
+.career {
+  margin: 10px 5px 5px 5px;
+  max-width: 80%;
+  line-height: 1.5;
 }
 
-a {
-    color: inherit;
+.career p {
+  margin-left: 20px;
 }
 
-.career{
-    margin: 5px;
+.education,
+.experience {
+  margin-top: 60px;
 }
 
-p {
-    margin: 5px;
+.qualification,
+.work-experience {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
-.mx-list {
-    margin-left: 20px;
-    align-items: end;
-    display: inline;
-    font-weight: 200;
+.qualification .qualification-data,
+.experience .work-experience-data {
+  padding: 24px;
+  background: #ccc;
+  border-radius: 4px;
+  background: #f9f9f9;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
-.hobbie {
-    padding: 5px;
+.skills {
+  margin-top: 60px;
+}
+
+.technical {
+  margin-top: 40px;
+}
+
+.career-oriented {
+  margin-top: 30px;
+}
+
+.career-oriented h3 {
+  display: block;
+}
+
+.career-skills {
+  /* margin: 0 auto;
+    text-align: center; */
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .checked {
-    padding: 2px;
+  padding: 2px;
 }
 
 #mongo {
-    height: 16px;
-    width: 17px;
+  height: 16px;
+  width: 17px;
 }
 
 .col-2 {
-    margin-top: -44px;
+  margin-top: -44px;
+}
+
+.skills-container-inner {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-item {
+  width: max-content;
+  padding: 10px 18px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 4px;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  font-weight: 450;
+  justify-content: center;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-item img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.hobbies {
+  margin-top: 40px;
+}
+
+.hobbie-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer {
+  margin-top: 40px;
 }

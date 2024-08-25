@@ -1,27 +1,57 @@
-.footer{
-    margin-left: 44%;
-    padding: 10px;
-    word-spacing: 2rem; 
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.neelfooter{
-    text-align:center;
-    font-size: 14px;
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
-.fa-github:hover{
-    color:black;
+.footer-right .footer-text {
+  padding: 10px 0;
 }
 
-.fa-linkedin:hover{
-    color:#1174d8;
+.footer-right a i:hover {
+  transition: all 0.3s linear;
 }
 
-.fa-instagram:hover{
-    color: #d6249f;
-    /* color: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf) */
+.fa-github:hover {
+  color: black;
 }
 
-.fa-envelope:hover{
-    color: #4285F4;
+.fa-linkedin:hover {
+  color: #1174d8;
+}
+
+.fa-instagram:hover {
+  color: #d6249f;
+  /* color: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf) */
+}
+
+.fa-envelope:hover {
+  color: #4285f4;
+}
+
+@media (min-width: 768px) {
+  .footer-right {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-right {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-right {
+    width: 1170px;
+  }
 }
