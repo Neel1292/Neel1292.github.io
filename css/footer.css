@@ -21,6 +21,11 @@
   transition: all 0.3s linear;
 }
 
+.social-icons {
+  display: flex;
+  gap: 30px;
+}
+
 .fa-github:hover {
   color: black;
 }
@@ -31,7 +36,6 @@
 
 .fa-instagram:hover {
   color: #d6249f;
-  /* color: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf) */
 }
 
 .fa-envelope:hover {
