@@ -7,7 +7,7 @@ on:
   # Triggers the workflow when a pull request is closed (merged) into the "main" branch
   pull_request:
     branches:
-      - main
+      - Development
     types: [closed]
 
   # Allows the workflow to be triggered manually from the Actions tab
