@@ -79,7 +79,6 @@ nav {
   width: 100%;
   z-index: 1000;
   backdrop-filter: blur(10px);
-  /* background-color: rgba(255, 255, 255, 0.1); */
   box-shadow: 0 4px 10px rgba(255, 253, 253, 0.1); 
 } 
 
@@ -139,12 +138,11 @@ nav .nav-list {
 }
 
 .nav-list h4.active {
-  background-color: #048484; /* Background green for active */
+  background-color: #048484;
 }
 
 .nav-list h4.active a {
-
-  color: white; /* Text color white for active */
+  color: white;
 }
 
 .intro {
