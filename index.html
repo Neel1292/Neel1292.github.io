@@ -9,6 +9,7 @@
     <title>Neel's Personal Site</title>
 
     <link rel="stylesheet" href="./css/contact.css">
+    <script src="./script/script.js" defer></script>
 
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="Neel Prajapati Portfolio" />
@@ -46,15 +47,16 @@
         <nav>
             <div class="page-width">
                 <div class="nav-list">
-                    <h4 id="home"><a href="#">Home</a></h4>
-                    <h4 id="edu"><a href="#">Eduction</a></h4>
-                    <h4 id="skill"><a href="#">Skills</a></h4>
-                    <h4 id="contact"><a href="./contact.html">Contact</a></h4>
+                    <h4 id="home"><a href="#introduction">Home</a></h4>
+                    <h4 id="edu"><a href="#experience">Work</a></h4>
+                    <h4 id="edu"><a href="#education">Eduction</a></h4>
+                    <h4 id="skill"><a href="#skills">Skills</a></h4>
+                    <h4 id="contact"><a href="#contact-form">Contact</a></h4>
                 </div>
             </div>
         </nav>
 
-        <div class="introduction">
+        <div class="introduction" id="introduction">
             <div class="page-width">  
                 <div class="intro">
                     <div class="profile_pic">
@@ -64,28 +66,22 @@
                     <div class="sub-intro">
                         <h1>Neel Dashrathbhai Prajapati</h1>
                         <h4>Full-Stack Developer (MERN)</h4>
-                        <!-- <h4></h4> -->
-                    </div>
-
-                    <div class="code_gif">
-                        <img id="code" src="images/code.gif" alt="Code Gif">
                     </div>
                 </div>
+                <hr>
             </div>
         </div>
 
-        <hr>
-        <br>
-
         <div class="details">
-
-            <!-- <h5 class="mx">DOB: 12/09/2002</h5> -->
-            <h5 class="mx"><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;Gujarat, India</h5>
-            <h5 class="mx"><i class="fa-solid fa-mobile-button"></i>&nbsp;&nbsp;(+91)-7046442576</h5>
-            <h5 class="mx"><i class="fa-solid fa-envelope"></i>&nbsp;prajapatineel64@gmail.com</h5>
-            <h5 class="mx"><i class="fa-solid fa-link"></i>&nbsp;<a
-                    href="https://www.linkedin.com/in/neel-prajapati-590375259/" target="_blank">Linkedin</a></h5>
-
+            <div class="page-width">   
+                <div class="personal-detail">
+                    <h5 class="personal-item"><i class="fa-solid fa-mobile-button"></i>&nbsp;&nbsp;(+91)-7046442576</h5>
+                    <h5 class="personal-item"><i class="fa-solid fa-envelope"></i>&nbsp;prajapatineel64@gmail.com</h5>
+                    <h5 class="personal-item"><i class="fa-solid fa-link"></i>&nbsp;<a
+                        href="https://www.linkedin.com/in/neel-prajapati-590375259/" target="_blank">Linkedin</a></h5>
+                    <h5 class="personal-item"><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;Gujarat, India</h5>
+                </div> 
+            </div>
         </div>
 
         <div class="career-objective">
@@ -101,12 +97,12 @@
                         knowledge to growth along with the organization objective.
                     </p><br>
                 </div>
+                <hr>
             </div>
         </div>
 
-        <hr>
 
-        <div class="experience">
+        <div class="experience" id="experience">
             <div class="page-width">
                 <h2>Work Experience </h2>
                 <div class="work-experience">
@@ -129,11 +125,11 @@
                         <h5>11-June-2023 - 27-June-2023</h5>
                     </div>
                 </div>
+                <hr>
             </div>
         </div>
-        <br><hr>
 
-        <div class="education">
+        <div class="education" id="education">
             <div class="page-width">
                 <h2>Education Qualification </h2>
                 <div class="qualification">
@@ -160,13 +156,13 @@
                         <h5>64.8%</h5>
                     </div>
                 </div>
+                <hr>
+
             </div>
         </div>
 
-        <!-- <hr size="3" noshade> -->
-        <br><hr>
 
-        <div class="skills">
+        <div class="skills" id="skills">
             <div class="page-width">
                 <h2>Skills </h2>
                 <div class="technical">
@@ -187,9 +183,9 @@
                         <div class="skill-item"><img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                                 alt="JavaScript">ReactJS</div>
-                        <!-- <div class="skill-item"><img
+                        <div class="skill-item"><img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-                                alt="Next">NextJS</div> -->
+                                alt="Next">NextJS</div>
                         <div class="skill-item"><img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                                 alt="Node">NodeJS</div>
@@ -222,112 +218,10 @@
                         <span class="mx-list">Learning</span>
                     </div>
                 </div>
+                <hr>
             </div>
         </div>
 
-        <!-- <table>
-        <tr>
-            <td>
-                <table cellspacing="20">
-
-                    <tbody style="margin-top: 2px;">
-
-                        <tr>
-                            <td class="mx-list"><i class="fa-brands fa-html5"></i> HTML5 </td>
-                            <td>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </td> 
-                        </tr>
-
-                        <tr>
-                            <td class="mx-list"><i class="fa-brands fa-css3-alt"></i> CSS3 </td>
-                             <td>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="mx-list"><i class="fa-brands fa-js"></i> JavaScript </td>
-                             <td>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </td> 
-                        </tr>
-
-                        <tr>
-                            <td class="mx-list"><i class="fa-brands fa-react"></i> React </td>
-                            <td>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="mx-list"><i class="fa-brands fa-bootstrap"></i> Bootstrap </td>
-                            <td>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </td>
-
-            <td>
-
-                <table cellspacing="20" class="col-2">
-
-                    <tbody style="margin-top: 2px;">
-
-                        <tr>
-                            <td class="mx-list"><i class="fa-brands fa-node"></i> NodeJS </td>
-                            <td>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="mx-list"><img id="mongo" src="/images/mongo.svg" alt="Mongo Icon"> MongoDB </td>
-                            <td>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="mx-list"><i class="fa-brands fa-java" wid></i> Java
-                            <td>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="mx-list"><i class="fa-solid fa-database"></i> SQL
-                            <td>
-                                <span class="fa fa-star checked"></span>
-                            </td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </td>
-        </tr>
-    </table> -->
-
-        <br>
-        <!-- <hr size="3" noshade> -->
-        <hr>
 
         <div class="hobbies">
             <div class="page-width">
@@ -339,35 +233,33 @@
                         <li class="hobbie">Watching Movies & Webseries</li>
                     </ul>
                 </div>
+                <hr>
             </div>
         </div>
-
-        <br>
-        <hr>
     </div>
 
-    <footer>
+    <footer id="contact-form">
         <div class="page-width">
             <div class="footer"> 
                 <div class="footer-left">
-                    <form class="form" action="mailto: prajapatineel122002@gmail.com" method="post" enctype="text/plain">
+                    <form class="form" action="mailto: prajapatineel64@gmail.com" method="post" enctype="text/plain">
 
                         <h2 style="text-align: center;">Contact Me</h2>
                     
                         <div class="input-control">
                             <label for="cname">Enter Name: </label>
-                            <input type="text" name="Name: " placeholder="Enter Full Name" required><br><br>
+                            <input type="text" name="Name: " placeholder="Enter Full Name" required>
                         </div>
                         <div class="input-control">
                             <label for="cemail">Enter Email: </label>
-                            <input type="email" name="Email: " placeholder="Enter Email" required><br><br>
+                            <input type="email" name="Email: " placeholder="Enter Email" required>
                         </div>
                         <div class="input-control">
                             <label for="cno">Mobile Number: </label>
-                            <input type="tel" name="Mobile Number: " placeholder="Enter Contact No." maxlength="10" required><br><br>
+                            <input type="tel" name="Mobile Number: " placeholder="Enter Contact No." maxlength="10" required>
                         </div>
                         <div class="input-control">
-                            <label for="reason">How May I Help You: </label><br>
+                            <label for="reason">How May I Help You: </label>
                             <textarea type="text" name="brief-description" placeholder="Provide Brief Descripton" cols="100" rows="5"></textarea>
                         </div>
 

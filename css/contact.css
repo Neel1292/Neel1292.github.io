@@ -1,15 +1,16 @@
-* {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:#EAF6F6;
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-
-body{
-    color: #66BFBF;
-}
-
 .form .input-control {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+.footer-left {
+    max-width: 80%;
 }
 
 .form .input-control input:focus, .form .input-control textarea:focus  {
@@ -21,20 +22,6 @@ body{
    border-bottom: 1px  dotted #048484;
    padding: 5px;
 }
-
-/* label {
-    color: inherit;
-    border-color:#227C70 ;
-    margin: 5px;
-    margin: 5px;
-    padding: 15px;
-    width: 200px;
-    text-align: left;
-    display: inline-flex;
-    font-size: 20px;
-    font-weight: bolder;
-    text-shadow: 1px 1px rgb(241, 240, 240);
-} */
 
 .btn {
     margin-top: 10px;
@@ -55,3 +42,4 @@ body{
     background-color: transparent;
     transition: all 0.3s linear;
 }
+  
