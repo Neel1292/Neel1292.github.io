@@ -1,0 +1,65 @@
+# GitHub Actions workflow to test, deploy, and release the website after a PR merge
+
+name: Deploy Portfolio after PR Merge
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow when a pull request is merged into the main branch from Development
+  pull_request:
+    branches:
+      - main
+    types: [closed]
+
+  # Allows the workflow to be triggered manually
+  workflow_dispatch:
+
+jobs:
+  # The job that handles building, testing, and deploying the website
+  deploy:
+    # This job runs only when the pull request is merged (PR close event with merged status)
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'Development'
+
+    # The job runs on the latest Ubuntu runner
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository code
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Step 2: Run any tests (optional)
+      # If you have tests, add them here, otherwise skip
+      - name: Run tests (optional)
+        run: |
+          echo "Run tests here if applicable"
+          # Example: Run linting or other checks if needed
+          # npm run test
+
+      # Step 3: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./ # Root directory containing HTML, CSS, JS files
+
+  # The job that handles creating a GitHub release
+  release:
+    # This job runs only when the pull request is merged into the main branch
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'Development'
+
+    # The job runs on the latest Ubuntu runner
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Step 2: Create a GitHub release
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            ./ # Path to files to include in the release (this can be adjusted)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub provides this automatically
