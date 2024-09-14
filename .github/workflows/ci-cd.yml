@@ -4,22 +4,21 @@ name: Portfolio Website
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow when a pull request is merged into the main branch from Development
+  # Triggers the workflow when a pull request is closed (merged) into the "main" branch
   pull_request:
     branches:
       - main
     types: [closed]
 
-  # Allows the workflow to be triggered manually
+  # Allows the workflow to be triggered manually from the Actions tab
   workflow_dispatch:
 
 jobs:
   # The job that handles building, testing, and deploying the website
   deploy:
-    # This job runs only when the pull request is merged (PR close event with merged status)
-    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'Development'
+    # This job only runs if the PR is merged, not just closed
+    if: github.event.pull_request.merged == true
 
-    # The job runs on the latest Ubuntu runner
     runs-on: ubuntu-latest
 
     steps:
@@ -27,39 +26,55 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # Step 2: Run any tests (optional)
-      # If you have tests, add them here, otherwise skip
+      # Step 2: Check if the PR was merged from Development
+      - name: Check Source Branch
+        run: |
+          echo "PR was merged from ${{ github.event.pull_request.head.ref }}"
+          if [ "${{ github.event.pull_request.head.ref }}" != "Development" ]; then
+            echo "Not merging from Development branch, skipping deployment"
+            exit 1
+          fi
+
+      # Step 3: Run any tests (optional)
       - name: Run tests (optional)
         run: |
           echo "Run tests here if applicable"
           # Example: Run linting or other checks if needed
           # npm run test
 
-      # Step 3: Deploy to GitHub Pages
+      # Step 4: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./ # Root directory containing HTML, CSS, JS files
+          publish_dir: ./ # Root directory containing HTML, CSS, and JS files
 
   # The job that handles creating a GitHub release
   release:
-    # This job runs only when the pull request is merged into the main branch
-    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'Development'
+    # This job only runs if the PR is merged
+    if: github.event.pull_request.merged == true
 
-    # The job runs on the latest Ubuntu runner
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
+      # Step 1: Checkout the repository code
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # Step 2: Create a GitHub release
+      # Step 2: Check if the PR was merged from Development
+      - name: Check Source Branch
+        run: |
+          echo "PR was merged from ${{ github.event.pull_request.head.ref }}"
+          if [ "${{ github.event.pull_request.head.ref }}" != "Development" ]; then
+            echo "Not merging from Development branch, skipping release"
+            exit 1
+          fi
+
+      # Step 3: Create a GitHub release
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            ./ # Path to files to include in the release (this can be adjusted)
+            ./ # Adjust the path to include the files you'd like to add to the release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub provides this automatically
