@@ -24,9 +24,9 @@ jobs:
     
     - name: Notify on success
       if: success()
-      run: echo "Deployment successful!" | mail -s "Deployment Success" your-email@example.com
+      run: echo "Deployment successful!" | mail -s "Deployment Success" prajapatineel122002@gmail.com
     
     - name: Notify on failure
       if: failure()
-      run: echo "Deployment failed!" | mail -s "Deployment Failure" your-email@example.com
+      run: echo "Deployment failed!" | mail -s "Deployment Failure" prajapatineel122002@gmail.com
 
