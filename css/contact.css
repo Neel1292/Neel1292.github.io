@@ -14,7 +14,7 @@
     max-width: 80%;
 }
 
-.form .input-control input:focus, .form .input-control textarea:focus  {
+.form .input-control input:focus, .form .input-control textarea:focus {
     outline: none;
 }
 
