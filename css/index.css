@@ -366,7 +366,6 @@ footer {
 
 @media (max-width: 1199px) {}
 
-/* Media query for max-width 989px */
 @media (max-width: 989px) {
   .intro {
     display: block;
@@ -401,7 +400,6 @@ footer {
   }
 }
 
-/* Media query for max-width 767px */
 @media (max-width: 767px) {
  
   .career p {
@@ -416,7 +414,6 @@ footer {
   .career-skills , .hobbie-container ul {
     font-size: 14px;
   }
-
 }
 
 @media (max-width: 480px) {
