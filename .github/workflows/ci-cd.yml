@@ -19,7 +19,7 @@ jobs:
     - name: Set up GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.TOKEN }}
         publish_dir: ./ # Assuming your HTML, CSS, and JS files are in the root directory
     
     - name: Notify on success
