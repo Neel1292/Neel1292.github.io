@@ -22,6 +22,7 @@
 }
 
 .social-icons {
+  margin-top: 10px;
   display: flex;
   gap: 30px;
 }
