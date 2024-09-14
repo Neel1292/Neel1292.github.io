@@ -1,24 +1,25 @@
-# GitHub Actions workflow to test, deploy, and release the website after a PR merge
+# GitHub Actions workflow to test, deploy, and release the website after a PR merge into Development
 
-name: Portfolio Website
+name: CI/CD for Development Branch
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow when a pull request is closed (merged) into the "main" branch
+  # Triggers the workflow when a pull request is merged into the Development branch
   pull_request:
     branches:
       - Development
-    types: [closed]
+    types: [closed] # Triggers when the PR is closed (either merged or closed)
 
-  # Allows the workflow to be triggered manually from the Actions tab
+  # Allows the workflow to be triggered manually
   workflow_dispatch:
 
 jobs:
   # The job that handles building, testing, and deploying the website
   deploy:
-    # This job only runs if the PR is merged, not just closed
-    if: github.event.pull_request.merged == true
+    # This job runs only when the pull request is merged into the Development branch
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'Development'
 
+    # The job runs on the latest Ubuntu runner
     runs-on: ubuntu-latest
 
     steps:
@@ -26,55 +27,42 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # Step 2: Check if the PR was merged from Development
-      - name: Check Source Branch
-        run: |
-          echo "PR was merged from ${{ github.event.pull_request.head.ref }}"
-          if [ "${{ github.event.pull_request.head.ref }}" != "Development" ]; then
-            echo "Not merging from Development branch, skipping deployment"
-            exit 1
-          fi
-
-      # Step 3: Run any tests (optional)
+      # Step 2: Run any tests (optional)
       - name: Run tests (optional)
         run: |
           echo "Run tests here if applicable"
           # Example: Run linting or other checks if needed
           # npm run test
 
-      # Step 4: Deploy to GitHub Pages
+      # Step 3: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./ # Root directory containing HTML, CSS, and JS files
+          publish_dir: ./ # Root directory containing HTML, CSS, JS files
 
   # The job that handles creating a GitHub release
   release:
-    # This job only runs if the PR is merged
-    if: github.event.pull_request.merged == true
+    # This job runs only when the pull request is merged into the Development branch
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'Development'
 
+    # The job runs on the latest Ubuntu runner
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository code
+      # Step 1: Checkout the repository
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # Step 2: Check if the PR was merged from Development
-      - name: Check Source Branch
-        run: |
-          echo "PR was merged from ${{ github.event.pull_request.head.ref }}"
-          if [ "${{ github.event.pull_request.head.ref }}" != "Development" ]; then
-            echo "Not merging from Development branch, skipping release"
-            exit 1
-          fi
-
-      # Step 3: Create a GitHub release
+      # Step 2: Create a GitHub release
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            ./ # Adjust the path to include the files you'd like to add to the release
+            index.html
+            css/**     # Includes all files and subdirectories under the `css` directory
+            fonts/**   # Includes all files and subdirectories under the `fonts` directory
+            images/**  # Includes all files and subdirectories under the `images` directory
+            script/**  # Includes all files and subdirectories under the `script` directory
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub provides this automatically
