@@ -18,6 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+tl.from(".profile_pic .profile", {
+    top: -500,
+    duration: 1,
+    ease: "bounce.out(2, 0.3)",
+})
+
 tl.to("nav", {
     top: 0,
     duration: 0.8,
@@ -29,8 +35,3 @@ tl.from(".nav-list h4", {
     stagger: 0.5,
 })
 
-tl.from(".profile_pic .profile", {
-    top: -500,
-    duration: 1,
-    ease: "bounce.out(2, 0.3)",
-})
