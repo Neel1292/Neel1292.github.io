@@ -359,6 +359,36 @@ hr {
   min-height: 50px;
 }
 
+/* Popup Container */
+#popup {
+  display: block;
+}
+  
+.popup {
+  position: fixed;
+  top: 20px; 
+  right: 20px;
+  /* bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); */
+  background: #28a745;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  min-width: 250px;
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+}
+
 footer {
   margin-top: 40px;
 }
