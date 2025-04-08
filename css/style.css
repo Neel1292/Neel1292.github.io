@@ -251,6 +251,13 @@ hr {
   gap: 10px;
   justify-content: flex-start;
   flex-direction: column;
+  transition: 0.5s all ease-in-out;
+}
+
+.qualification .qualification-data:hover,
+.experience .work-experience-data:hover {
+  box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.10);
 }
 
 .skills {
@@ -310,10 +317,12 @@ hr {
   font-family: sans-serif;
   font-weight: 450;
   justify-content: center;
+  transition: 0.5s all ease-in-out;
 }
 
 .skill-item:hover {
   transform: translateY(-5px);
+  box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill-item img {
@@ -351,6 +360,11 @@ hr {
   width: 150px;
   height: 150px;
   object-fit: contain;
+  transition: 0.5s all ease-in-out;
+}
+
+.certificate-image:hover {
+  transform: scale(1.10);
 }
 
 .text-box-control {
