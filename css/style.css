@@ -334,6 +334,25 @@ hr {
   gap: 15px;
 }
 
+.certificates {
+  margin-top: 40px;
+}
+
+.certificate {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
 .text-box-control {
   resize: vertical;
   max-height: 200px;
