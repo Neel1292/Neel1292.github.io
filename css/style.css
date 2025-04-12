@@ -474,6 +474,12 @@ footer {
   .code_gif {
     width: 60%;
   }
+
+  .qualification .qualification-data:hover,
+  .experience .work-experience-data:hover {
+    transform: scale(1.05);
+  }
+
   .qualification, .work-experience {
     grid-template-columns: 1fr;
     gap: 10px;
